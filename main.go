@@ -11,6 +11,7 @@ import (
 const TOKEN string = ""
 const CHANNEL string = ""
 const DELAY time.Duration = 5
+const FILENAME string = "sites.txt"
 
 type site struct {
 	Url    string
@@ -18,7 +19,7 @@ type site struct {
 }
 
 func main() {
-	bytes, _ := ioutil.ReadFile("sites.txt")
+	bytes, _ := ioutil.ReadFile(FILENAME)
 	links := strings.Split(string(bytes), "\n")
 
 	c := make(chan site)
