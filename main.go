@@ -8,9 +8,9 @@ import (
     "time"
 )
 
-const TOKEN string = ""
-const CHANNEL string = ""
-const DELAY time.Duration = 5
+const TOKEN string = "5191877921:AAFXBI8KvxQgPwEAmSzWpZEQ4Hknoyq9UrQ"
+const CHANNEL string = "1032451033"
+const DELAY time.Duration = 20
 const FILENAME string = "sites.txt"
 
 type site struct {
